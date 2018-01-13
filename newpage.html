@@ -1,0 +1,133 @@
+<html>
+   <head>
+      <title>The Materialize Form Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+       <script src = "myscripts.js"></script> 
+   </head>
+   
+   <body>   
+   	<div class="parallax-container">
+    <div class="parallax"><img src="https://static.pexels.com/photos/248771/pexels-photo-248771.jpeg"></div>
+  </div>
+      <div class = "container row">
+         <form class = "col s12" method="post" action="form.php">
+         	<input type="hidden" name="submitted" value="true"/>
+            <div class = "row">
+               <div class = "input-field col s6">
+                  <i class = "material-icons prefix">account_circle</i>
+                  <input placeholder = "Firstname"
+                     type = "text" class = "active validate" name="fname" required />
+                  <label for = "fname">Firstname</label>
+               </div>
+               <div class = "input-field col s6">
+                  <i class = "material-icons prefix">account_circle</i>
+                  <input placeholder = "Lastname"  
+                     type = "text" class = "active validate" name="lname" required />
+                  <label for = "lname">Lastname</label>
+               </div>
+              
+            </div>
+            
+            <div class = "row">
+               <div class = "input-field col s6">
+               	<i class="material-icons prefix">drafts</i>
+                  <input placeholder = "Email" id = "email" type = "email"
+                    name="emailid" class = "validate">
+
+                  <label for = "email">Email</label>
+               </div>
+               <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input type="text" name="mobno" maxlength="10" class="validate">
+          <label for="icon_telephone">Mobile Number</label>
+          
+            </div>
+
+            </div>
+
+           <div class="col s12">
+          <i class="material-icons prefix">cake</i>
+          <input type="date" name="dob">
+          <label for="datepicker">Birthdate</label>
+            </div>
+              
+         
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <i class = "material-icons prefix">mode_edit</i>
+                  <textarea id = "address" class = "materialize-textarea" name="add"></textarea>
+                  <label for = "address">Address</label>
+               </div>
+            </div>
+            
+            
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <p>
+                     <input id = "married" type = "checkbox" checked = "checked" name="marstatus" />
+                     <label for = "married">Married</label>
+                  </p>
+                  
+                  <p>
+                     <input id = "single" type = "checkbox" class = "filled-in" name="marstatus"/>
+                     <label for = "single">Single</label>
+                  </p>
+                  
+                  
+               </div>
+            </div>
+             <div class="col s12">
+          <i class="material-icons prefix">wc</i>
+          <input type="date" name="anniversary">
+          <label for="datepicker">Anniversary date</label>
+            </div>
+            <div class = "row">
+               <div class = "input-field col s12">
+                   <p>
+                     <input id = "male" type = "radio" name = "Gender"
+                        value = "male" checked />
+                     <label for = "male">Male</label>
+                  </p>
+                  
+                  <p>
+                     <input id = "female" type = "radio" name = "Gender"
+                        value = "female" checked />
+                     <label for = "female">Female</label>
+                  </p>
+                  
+                 
+               </div>
+            </div> 
+              <div class="input-field col s6">
+
+          <i class="material-icons prefix">layers</i>
+          <input type="text" class="gyear" name="gyear">
+          <label for="gyear">Graduation year</label>
+            </div>
+            <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <input type="text" class="qualification" name="qual">
+          <label for="qualification">Qualifications</label>
+            </div>    
+       <button class="btn waves-effect waves-light middle" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    
+         </form>       
+      </div>
+      <div class="parallax-container">
+    <div class="parallax"><img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"></div>
+  </div>
+
+   </body>   
+</html>
